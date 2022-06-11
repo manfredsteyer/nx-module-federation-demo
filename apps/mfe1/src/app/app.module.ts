@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { FlightsModule } from './flights/flights.module';
 import { APP_ROUTES } from './app.routes';
 import { AuthLibModule } from '@demo/auth-lib';
+import { mfe1DomainLogic } from '@demo/mfe1/domain-logic';
 
 @NgModule({
   imports: [

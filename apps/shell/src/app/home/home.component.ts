@@ -2,7 +2,6 @@
 
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '@demo/auth-lib';
-import { mfe1DomainLogic } from '@demo/mfe1/domain-logic';
 
 @Component({
   selector: 'app-home',
