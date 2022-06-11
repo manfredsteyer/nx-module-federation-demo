@@ -2,6 +2,10 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "auth-lib": "libs/auth-lib",
+    "mfe1": "apps/mfe1",
+    "mfe1-domain-logic": "libs/mfe1/domain-logic",
+    "mfe1-e2e": "apps/mfe1-e2e",
     "shell": "apps/shell",
     "shell-e2e": "apps/shell-e2e"
   }

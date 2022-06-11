@@ -1,13 +1,24 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { HomeComponent } from './home/home.component';
+import { APP_ROUTES } from './app.routes';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { AuthLibModule } from '@demo/auth-lib';
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
-  imports: [BrowserModule],
+  imports: [
+    BrowserModule,
+    AuthLibModule,
+    RouterModule.forRoot(APP_ROUTES)
+  ],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    NotFoundComponent
+  ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
